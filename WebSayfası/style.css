@@ -1,0 +1,33 @@
+
+body {
+    margin:0;
+    padding: 0;
+    background: url(wallpaper.jpg);
+    background-size: cover;
+}
+
+.div divnavbar{
+    color: aqua;
+}
+
+.box{
+    width: 25%;
+    height:40%;
+    background: hsla(28, 100%, 75%,0.91);;
+    text-align: center;
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 15%;
+    flex-flow: wrap;
+}
+
+.box img{
+    border-radius: 30%;
+    width: 45%;
+}
+
+.box:hover{
+    border-radius: 35%;
+    background-color: #F76C44;
+}
+

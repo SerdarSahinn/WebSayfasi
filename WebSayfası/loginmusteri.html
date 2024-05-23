@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="loginatyl.css">
+    <title>Giriş yap</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: 
+        #b7d6f2;
+    }
+    .container{
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 7px 10px rgb(0, ,0,1.1);
+        overflow: hidden;
+    }
+    .container .forms{
+        display: flex;
+        align-items: center;
+        width: 200%;
+        height: 550px;
+        trans
+      
+    }
+    .container.active .forms{
+        height: 600px;
+    }
+    .container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease,opacity 0.15s ease;
+       
+    }
+    .container .signup{
+    opacity: 0;
+    transition:  opacity 0.09s ease;
+    }
+    .container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    }
+
+    .container .form{
+        padding: 35px;
+        width: 50%;
+        background-color: #fff;
+        transition: margin-left 0.18s ease;
+    }   
+    .container .form .title{
+        font-size: 30px;
+        font-weight:600;
+        position: relative;
+    }
+   .form .input-field{
+    background-color: black;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 45px;
+}
+.input-field input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid transparent;
+}
+.input-field i{
+    position: absolute;
+top: 50%;
+left: 0;
+
+font-size: 20px;
+}
+.form .checkbox-text{
+  
+    display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center0
+}
+.checkbox-content input{
+    margin: 1px 7px 0px 4px;
+    
+}
+.form a{
+ text-decoration: none;
+
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .text{
+    color:black;
+    font-size: 13px;
+}
+    
+    .form a.text{
+        color: blue;
+        
+    }
+    .form .button{
+    margin-top: 35px;
+    }
+    .form .button input{
+        border: none;
+        color: white;
+        font-size: 20px;
+      background-color: blue;
+    }
+    .form .login-signup{
+        margin-top: 30px;
+        text-align: right;
+       
+    }
+    .breadcrumb {
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    background-color: aliceblue;
+   }
+
+    ul.breadcrumb li a:hover {
+    color: #f27d5c;
+    text-decoration: underline;
+    }
+
+
+    
+</style>
+</head>
+<body>
+    <div>
+    <ul class="breadcrumb" >
+        <li><a href="anasayfa.html">Ana sayfa</a></li>
+        <li>Müşteri girişi</li>
+    </ul>
+    </div>
+
+    <div class="container">        
+        <div class="forms">
+          <div class="form login">
+              <span class="title">Giriş</span>
+              <form action="#" >
+               <div class="input-field">
+                  <input type="text" placeholder="e-posta adresinizi giriniz" required>
+                                 
+                  <i class="uil uil-envelope"></i>
+             
+               </div>
+               <div class="input-field">
+                  <input type="Passaword" class="password"  placeholder="Şifrenizi  giriniz" required>
+                  <i class="uil uil-lock"></i>
+               </div>
+               <div class="checkbox-text">
+                  <div class="checkbox-content">
+                      <input type="checkbox"  id="check">
+                      <label for="check" class="text" >Beni Hatırla</label>
+                  </div>
+                  <a href="#" class="text">Şifremi Unuttum</a>
+               </div>
+               <div class="input-field button">
+                  <input type="button" value="Giriş Yap">
+               </div>
+              </form>
+              <div class="login-signup">
+                  <span class="text">
+                      <a href="#" class="text signup-text">Üye Ol</a>
+                  </span>
+              </div>
+          </div>
+
+
+
+         <!-- kayıt formu-->
+
+
+
+          <div class="form signup">
+              <span class="title">Üye Ol</span>
+              <form action="#" >
+               <div class="input-field">
+                  <input type="text" placeholder="Adınızı ve soyadınızı Giriniz" required>
+                  <i class="uil uil-user"></i>
+               </div>
+               
+               <div class="input-field">
+                  <input type="text" placeholder="e-posta adresinizi giriniz" required>
+                                 
+                  <i class="uil uil-envelope"></i>
+             
+               </div>
+               <div class="input-field">
+                  <input type="Passaword" class="password" placeholder="Yeni Şifrenizi  giriniz" required>
+                  <i class="uil uil-lock"></i>
+               </div>
+               <div class="checkbox-text">
+                  <div class="checkbox-content">
+                      <input type="checkbox"  id="check">
+                      <label for="check" class="text" >Beni Hatırla</label>
+                  </div>
+                  <a href="#" class="text">Şifremi Unuttum</a>
+               </div>
+               <div class="input-field button">
+                  <input type="button" value="Kayıt Ol">
+               </div>
+              </form>
+              <div class="login-signup">
+                  <span class="text">
+                      <a href="#" class="text login-link">Giriş Yap</a>
+                  </span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script>
+      const container=document.querySelector(".container");
+signUp=document.querySelector(".signup-text");
+loGin=document.querySelector(".login-link");
+
+signUp.addEventListener("click",()=>{
+container.classList.add("active");
+ });
+ loGin.addEventListener("click",()=>{
+  container.classList.remove("active");
+     });
+  </script>
+</body>
+</html>

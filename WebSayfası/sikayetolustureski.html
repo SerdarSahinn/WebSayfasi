@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+  <div class="row mx-0 justify-content-center">
+    <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0">
+      <form
+        method="POST"
+        class="w-100 rounded p-4 border bg-white"
+        action="   "
+        enctype="multipart/form-data"
+      >
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">Adınız:</span>
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Örn: Berkay Uzun"
+          />
+        </label>
+
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">E-mail:</span>
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            placeholder="example@example.com"
+          />
+        </label>
+
+        <label class="d-block col-mb-4">
+          <span class="d-block col-mb-2">İlgili Firma:</span>
+          <input
+          name="name"
+          type="text"
+          class="form-control"
+          placeholder="Amazon, Trendyol"
+          />
+        </label>
+        <br>
+
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">Şikayetinizi yazınız.</span>
+          <textarea
+            name="message"
+            class="form-control"
+            rows="3"
+            placeholder="Şikayetim..."
+          ></textarea>
+        </label>
+
+        <div class="mb-4">
+          <label class="d-block mb-2">Dosya</label>
+          <div class="form-control h-auto">
+            <input type="file" class="form-control-file" />
+          </div>
+        </div>
+        <br>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary px-3">Gönder</button>
+        </div>
+
+        
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

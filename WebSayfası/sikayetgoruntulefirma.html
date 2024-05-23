@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>   
+     .container li a:hover{
+        color: #f27d5c;
+       text-decoration: underline;
+      }
+      .container.nav.nav-item {
+        background-color: #f27d5c;
+      }
+      body
+      {
+      margin:0;
+      padding: 0;
+      background: url(wallpaper2.jpg);
+      background-size: cover;
+      }
+      h1{
+        text-align:center;
+        font-weight: bold;
+      }
+      div.row
+      {
+        text-align:center;
+      }
+      </style>
+
+   
+</head>
+
+<body>
+    <div class="container mt-3 dropdown-menu-right">           
+        <ul class="nav nav-tabs " role="button">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="anasayfa.html">AnaSayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="hesabimfirma.html">Hesabım</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="sikayetolustur.html">Şikayetlerim</a>
+          </li>
+          <li class="nav-item active" >
+            <a class="nav-link"  data-bs-toggle="tab" href="sikayetolustur.html">Şikayet Yanıtla</a>
+          </li>
+        </ul>      
+    </div>
+
+
+   
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 ">
+                <img src="sikayetciadam.png" style="width: 50%; margin-top: 30%;">
+                <h1>Müşterilerini cevapsız</h1>
+                <h1>bırakma!</h1>
+            </div>
+          <div class="col-md-6 ">          
+                    <div class="form-group" id="alt">
+                        <div class="form-group">
+                            <small id="tarih2"></small>
+                            <textarea class="form-control" id="mesaj" rows="3" style="display: none;"></textarea><br>
+                            <div class="form-group pull-right">
+                                <input type="text" class="search form-control " style="margin-top: 40px;margin-right: 90px;" placeholder="Şikayet Ara">
+                            </div>
+                            <span class="counter pull-right"></span>
+                        </div>
+                        <small id="tarih">2022/10/08</small>
+                        <textarea class="form-control" rows="3">Amazon hesabım geçtiğimiz günlerde çalındı hesaptan benim kartlarım dışında 25 dolarlık Gift Card alımı yapılmış ve hesabımın bağlı olduğu ülke değiştirilmiş. Bunlar yüzünden Amazon hesabımı askıya almış ve hesabıma erişim sağlayamıyorum. </textarea>         
+                            <div class="col-md-6 ">
+                          <button class="form-control" id="btn1" style="background-color:#b7d6f2;">Yanıtla</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="form-control"  style="background-color: red;">Kapat</button>    
+                    </div><br><br>
+                    <input type="text" class="form-control"  id="gstr">
+                    <button class="form-control" id="gzl">Gönder</button>
+                    </div>
+                    <form >
+                        <div class="form-group">
+                            <small id="tarih">2022/11/11</small>
+                            <textarea class="form-control" rows="3">171-1042075-5313965 sipariş numaralı Amazon TR siparişim daha kargo kodu oluşturulmamış ve yola çıkmamış olmasına rağmen iptal etmeye çalıştığım halde sevkiyat koduoluşturulmuş diyerek iptal etmeyi red ediyorlar.</textarea>
+                            <div class="col-md-6 ">
+                                <button class="form-control" id="btn21" style="background-color:#b7d6f2;">Yanıtla</button>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <button class="form-control"style="background-color: red;" >Kapat</button>
+                        </div><br><br>
+                      
+                <form >
+                <div class="form-group">
+                    <small id="tarih">2011/07/10</small>
+                    <textarea class="form-control" rows="3">Amazondan aldığım ürün AGT Kargo ile gönderildi. Kargo gelmediği haldegeldim bulamadım adreste deyip not düşüyor 3 gündür kuryede geziyor ürün. AGT müşteri hizmetleri kargo kuryede teslimat zamanını o belirliyor biz bir şey yapamıyoruz kimde bilmiyoruz diyor. </textarea>
+                    <div class="col-md-6 ">
+                        <button class="form-control" style="background-color:#b7d6f2;">Yanıtla</button>
+                          </div>
+                          <div class="col-md-6">
+                              <button class="form-control"style="background-color: red;">Kapat</button>
+                </div>
+                </form>
+                <form >
+                    <div class="form-group">
+                        <small id="tarih">2022/11/13</small>
+                        <textarea class="form-control" rows="3">Amazon'a üye oldum kahve makinesi sipariş ettim açıklayıcı olmadıkları için premi üyesi olmuşum 7.90 Para çekmişler kartımdan hemen iptal ettirdim insanları böyle böyle mağdur edip paralarını topluyorsunuz hak mıdır bu </textarea>
+                        <div class="col-md-6 ">
+                            <button class="form-control" style="background-color:#b7d6f2;">Yanıtla</button>
+                              </div>
+                              <div class="col-md-6">
+                                  <button class="form-control"style="background-color: red;">Kapat</button>
+                </div>
+            
+                    </form>
+                    <form >
+                        <div class="form-group">
+                            <small id="tarih">2022/11/13</small>
+                            <textarea class="form-control" rows="3">Amazon dan asla alışveriş yapmamam gerektiğini öğrendim sorunu çözmüyorlar oyalıyorlar 11 gündür ürünüm ne iptal oluyor ne de çözüm sunuyorlar, bunlar satıcıyı değil satıcı bunları yönlendiriyor satıcıya hiçbir şekilde müdahale edemiyorlar 11 gündür.</textarea>
+                            <div class="col-md-6 ">
+                                <button class="form-control" style="background-color:#b7d6f2;">Yanıtla</button>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <button class="form-control"style="background-color: red;">Kapat</button>
+                        </div>
+                
+                    </form>
+            </form>
+            </form>
+
+          </div>
+
+         
+          </div>
+        </div>
+   
+        <script>
+            $(function(){
+                   
+                   $("#gstr").hide();
+                 $("#gzl").hide();
+                   $("#btn1").click(function(){
+                   $("#gstr").show(1000);
+                   $("#gzl").show(1000);
+                 
+               });
+   
+             
+               });
+
+
+            
+          
+       
+         </script>
+    
+</body>
+</html>

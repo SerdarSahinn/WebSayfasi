@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Şikayetlerim</title>
+
+
+    <script src="Untitled-1.js"></script>
+    <script>
+         var now=new Date();
+  $(document).ready(function(){
+     $("#btn").click(function(){
+        $("#tarih2").text(now);
+     });
+  });
+
+    </script>
+    <!--Şikayet Yazma Yeri-->
+  <script>
+     $(function(){
+            
+            $("#mesaj").hide();
+            $("#btn").click(function(){
+            $("#mesaj").show(1000);             
+        });        
+        });
+   
+  $(function(){
+   var icerik=$("#icerik");
+   icerik.keyup(function(){
+     $("#mesaj").text(icerik.val());       
+   });
+  });
+  </script>
+
+<style>
+   body {
+    margin:0;
+    padding: 0;
+    background-color: #b7d6f2;
+   }
+    #btn{
+        margin-top: 200px;
+    }
+
+    #alt{
+        margin-top: 100px;
+    }
+
+    .container li a:hover{
+      color: #f27d5c;
+     text-decoration: underline;
+    }
+    .container.nav.nav-item {
+      background-color: #f27d5c;
+    }
+    body {
+    margin:0;
+    padding: 0;
+    background: url(wallpaper2.jpg);
+    background-size: cover;
+    }
+</style>
+
+</head>
+<body>
+
+
+    <div class="container mt-3 dropdown-menu-right">           
+        <ul class="nav nav-tabs " role="button">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="anasayfa.html">AnaSayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="hesabimmusteri.html">Hesabım</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="sikayetolustur.html">Şikayetlerim</a>
+          </li>
+          <li class="nav-item active" >
+            <a class="nav-link"  data-bs-toggle="tab" href="sikayetolustur.html">Şikayet Yaz</a>
+          </li>
+        </ul>      
+    </div>
+
+
+    <div class="container">
+      
+        <div class="row">
+            <div class="col-md-6 ">
+                <form >
+                    <div class="form-group ">
+                        <input type="button" class=" form-control " id="btn" value="Şikayeti Gönder" >
+                        
+                     <textarea class="form-control" name="icerik" rows="10" id="icerik" ></textarea>
+                      </div>
+                      <div class="mb-4">
+                        <div class="form-control h-auto">
+                          <input type="file" class="form-control-file" />
+                        </div>
+                      </div>
+                   
+                <form >
+            </div>
+          <div class="col-md-6 ">
+
+           
+                    <div class="form-group" id="alt">
+                        <div class="form-group">
+                            <small id="tarih2"></small>
+                            <textarea class="form-control" id="mesaj" rows="3" style="display: none;"></textarea><br>
+                        </div>
+                        <textarea class="form-control" rows="3">Default of .form-check, types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</textarea><br>
+                    <small id="tarih">2022/11/13</small>
+                    </div>
+                    <form >
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3">Default of .form-check, types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</textarea><br>
+                        </div>
+          
+            <form >
+                <div class="form-group">
+                    <textarea class="form-control" rows="3">Default of .form-check, types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</textarea><br>
+                </div>
+        
+        
+                
+                </form>
+                <form >
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3">Default of .form-check, types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</textarea><br>
+                    </div>
+            
+                    </form>
+                    <form >
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3">Default of .form-check, types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</textarea><br>
+                        </div>
+                
+                        </form>
+            </form>
+            </form>
+
+          </div>
+
+         
+          </div>
+        </div>
+
+
+
+  
+</body>
+</html>
